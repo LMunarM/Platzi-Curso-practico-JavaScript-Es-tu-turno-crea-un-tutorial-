@@ -114,7 +114,6 @@ const inputFile = document.getElementById("input-file");
           //*Ahora vamos a hacer una función para validar el tipo de archivo y tomar acciones según si el archivo es correcto o incorrecto.*//
 function handleFileSelection(file) {
   const type = file.type;
-  const fileName = file.name.toLowerCase();  Esta variable la vamos a usar para mostrar el nombre del archivo subido. Lo que hace "toLowerCase" es poner todo en minuscula, ayuda a mantener la consistencia entre sistemas operativos y tambien para la comparacion y validación.
 
   if (type.includes("video/") || type.includes("audio/") || fileName.endsWith(".mp3") || fileName.endsWith(".mp4")) { //*En caso de que el archivo sea mp3 o mp4, le da la clase de "valid" a la etiquetta "label" de nuestro botón, además  de que cambie el texto de debajo del botón de "Ningún archivo a sido subido" a "El nombre del archivo subido" *//
    
