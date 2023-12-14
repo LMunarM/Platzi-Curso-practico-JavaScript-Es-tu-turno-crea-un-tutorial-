@@ -1,0 +1,67 @@
+html{
+    font-size: 62.5%;
+    background: rgb(178,13,200);
+    background: radial-gradient(circle, rgba(178,13,200,1) 0%, rgba(59,3,77,1) 60%);
+}
+main{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 750px;
+  left: 50%;
+  translate: -50%;
+  background-color: rgba(59,3,77,1);
+  font-size: 1.4rem;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(11, 186, 186);
+
+}
+
+
+.upload {
+  width: 95px;
+  min-height: 95px;
+  align-items: center;
+  background-color: rgb(110, 9, 123);
+  border-radius: 50%;
+  border-color: black;
+  font-size: 1.6rem;
+  transition: 0.5s;
+  cursor:pointer;
+  
+}
+.upload img{
+  cursor:pointer;
+}
+.upload:hover{
+  background-color: rgba(178,13,200,1);
+
+}
+.upload:active{
+  cursor: progress;
+  background-color:rgb(77, 8, 86);
+}
+
+
+#input-file {
+  display: none; 
+
+}
+.invalid{
+  background-color: rgb(252, 79, 79);
+
+}
+.invalid:hover{
+  background-color:rgb(252, 79, 79) ;
+  opacity: 0.7;
+}
+
+.valid{background-color: rgb(11, 186, 186);
+
+}
+.valid:hover{
+  background-color: rgb(7, 112, 112);
+  opacity: 0.7;
+}
