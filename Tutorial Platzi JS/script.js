@@ -4,7 +4,6 @@ const inputFile = document.getElementById("input-file");
          
 function handleFileSelection(file) {
   const type = file.type;
-  const fileName = file.name.toLowerCase();  
 
   if (type.includes("video/") || type.includes("audio/") || fileName.endsWith(".mp3") || fileName.endsWith(".mp4")) { 
    
